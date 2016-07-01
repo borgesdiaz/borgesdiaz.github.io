@@ -1,54 +1,134 @@
 <html>
     <head>
         <title>Borges Diaz</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script type="text/javascript" src="js/index.js"></script>
+        <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
-        <div>
-            <div>
-                <h1>Borges Diaz</h1>
-                <p>Full Stack Web Developer</p>
-                <ul>
-                    <li>About Me</li>
-                    <li>Skills</li>
-                    <li>Portfolio</li>
-                </ul>
-                <ul>
-                    <li>github</li>
-                    <li>LinkedIn</li>
-                    <li>Google plus</li>
-                </ul>
+        <div id="container" class="container">
+            <div id="head" style="border : 1px solid blue;">
+                <div class="content">
+                    <h1>Borges Diaz</h1>
+                    <p>Full Stack Web Developer</p>
+                    <p>devborgesdiaz@gmail.com</p>
+                    <ul>
+                        <li>
+                            <ul class="inline-list">
+                                <li>
+                                    <button type="button" class="btn btn-default head-btn" id="about-me-btn">About Me</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-default head-btn" id="skills-btn">Skills</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-default head-btn" id="portfolio-btn">Portfolio</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="inline-list">
+                                <li>
+                                    <button type="button" 
+                                            class="btn btn-default social-media-link" 
+                                            data-link="https://github.com/borgesdiaz"><i class="icon fa fa-github" aria-hidden="true"></i></button>
+                                </li>
+                                <li>
+                                    <button type="button" 
+                                            class="btn btn-default social-media-link"
+                                            data-link="https://www.linkedin.com/in/borges-diaz-13185bab"><i class="icon fa fa-linkedin" aria-hidden="true"></i></button>
+                                </li>
+                                <li>
+                                    <button type="button" 
+                                            class="btn btn-default social-media-link"
+                                            data-link="https://plus.google.com/103433166924481621044"><i class="icon fa fa-google-plus" aria-hidden="true"></i></button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
             
-            <div>
-                <h1>About Me</h1>
-                <img src="#" alt="">
-                <p>Hello, I am a full stack web developer experienced in PHP, Laravel, Javascript, JQuery, AngularJS, and SQL.</p>
-                <button>Resume</button>
+            <div id="about-me">
+                <div class="content">
+                    <h1>About Me</h1>
+                    <img src="http://www.clipartbest.com/cliparts/pc5/eBn/pc5eBnKji.svg" alt="" id="profile-picture">
+                    <p>Hello, I am a full stack web developer experienced in PHP, Laravel, Javascript, JQuery, AngularJS, and SQL.</p>
+                    <button type="button" id="resume-btn" class="btn btn-default" data-link="BorgesDiazResume.html">Resume</button>
+                </div>
             </div>
             
-            <div>
-                <img src="#" alt="">
-                <img src="#" alt="">
-                <img src="#" alt="">
-                <img src="#" alt="">
-                <img src="#" alt="">
-                <img src="#" alt="">
+            <div id="skills">
+                <div class="content">
+                    <ul class="inline-list">
+                        <li>
+                            <a href="http://php.net/">
+                                <img src="images/php.gif" alt="" class="skill-logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://laravel.com/">
+                                <img src="images/laravel.png" alt="" class="skill-logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.javascript.com/">
+                                <img src="images/javascript.svg" alt="" class="skill-logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://jquery.com/">
+                                <img src="images/jquery.svg" alt="" class="skill-logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://angularjs.org/">
+                                <img src="images/angularjs.png" alt="" class="skill-logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.mysql.com/">
+                                <img src="images/mysql.png" alt="" class="skill-logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://git-scm.com/">
+                                <img src="images/git.svg" alt="" class="skill-logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             
-            <div>
-                <h1>Portfolio</h1>
+            <div id="portfolio-head">
+                <div class="content">
+                    <h1>Portfolio</h1>
+                </div>
             </div>
             
-            <div>
+            <div id="portfolio" class="content">
                 
             </div>
             
-            <div>
-                <ul>
-                    <li>github</li>
-                    <li>LinkedIn</li>
-                    <li>Google plus</li>
+            <div id="footer" class="content">
+                <ul class="inline-list">
+                    <li>
+                        <button type="button" 
+                                class="btn btn-default social-media-link"
+                                data-link="https://github.com/borgesdiaz"><i class="icon fa fa-github" aria-hidden="true"></i></button>
+                    </li>
+                    <li>
+                        <button type="button" 
+                                class="btn btn-default social-media-link"
+                                data-link="https://www.linkedin.com/in/borges-diaz-13185bab"><i class="icon fa fa-linkedin" aria-hidden="true"></i></button>
+                    </li>
+                    <li>
+                        <button type="button" 
+                                class="btn btn-default social-media-link"
+                                data-link="https://plus.google.com/103433166924481621044"><i class="icon fa fa-google-plus" aria-hidden="true"></i></button>
+                    </li>
                 </ul>
                 
                 <p>&copy; Borges Diaz. All rights reserved.</p>

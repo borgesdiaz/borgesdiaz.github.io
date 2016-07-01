@@ -1,0 +1,122 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic");
+#container {
+    font-family: 'Roboto', sans-serif;
+    width : 100%;
+    padding : 0px;
+    text-align : center;
+}
+
+#container .content {
+    position : relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+#container ul {
+    list-style-type : none;
+    padding : 0px;
+}
+
+#container h1 {
+    font-size : 50px;
+    font-weight : 100;
+    margin :0px;
+}
+
+#container p {
+    font-size : 25px;
+    font-weight : 100;
+}
+
+#container .inline-list {
+    margin-bottom : 20px;
+}
+
+#container .inline-list li {
+    display : inline;
+}
+
+#container .social-media-link {
+    background : none;
+    color : white;
+    width : 70px;
+    height : 70px;
+    border-radius : 35px;
+    margin : 0px 50px;
+}
+
+#container .social-media-link .icon {
+    font-size : 30px;
+}
+
+#head {
+    height : 800px;
+    background-image : url("../images/nyc.jpg");
+    background-size : 100%;
+}
+
+#head .content h1 {
+    margin-bottom : 30px;
+}
+
+#head .content p {
+    margin-bottom : 30px;
+}
+
+#head .content .head-btn {
+    background : #809fff;
+    color : white;
+    width : 150px;
+    height : 65px;
+    font-size : 20px;
+}
+
+#head, #portfolio {
+    color : white;
+}
+
+#about-me {
+    height : 500px;
+}
+
+#skills, #portfolio {
+    background : #4d4d4d;
+}
+
+#skills {
+    height : 500px;
+}
+
+#skills .skill-logo {
+    width : 100px;
+    height : 100px; 
+}
+
+#skills ul li {
+    margin : 0px 30px;
+}
+
+#portfolio-head {
+    height : 300px;
+}
+
+#about-me, #portfolio-head, #footer {
+    color : #1a1a1a;
+}
+
+#profile-picture {
+    width : 200px;
+    height : 200px;
+    border-radius : 100px;
+}
+
+#resume-btn {
+    background : #1a1a1a;
+    color : white;
+    padding : 15px 25px;
+}
+
+#footer .social-media-link {
+    color : #1a1a1a;
+    border-color : #1a1a1a;
+}
