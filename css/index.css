@@ -80,7 +80,8 @@
 }
 
 #skills, #portfolio, #sample-work {
-    background : #4d4d4d;
+    background-image : url("../images/dark-background.jpg");
+    //background : #4d4d4d;
 }
 
 #skills {
