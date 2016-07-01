@@ -36,7 +36,7 @@
     display : inline;
 }
 
-#container .social-media-link {
+#container .social-media-btn {
     background : none;
     color : white;
     width : 70px;
@@ -45,7 +45,7 @@
     margin : 0px 50px;
 }
 
-#container .social-media-link .icon {
+#container .social-media-btn .icon {
     font-size : 30px;
 }
 
@@ -71,7 +71,7 @@
     font-size : 20px;
 }
 
-#head, #portfolio {
+#head, #portfolio, #sample-work {
     color : white;
 }
 
@@ -79,7 +79,7 @@
     height : 500px;
 }
 
-#skills, #portfolio {
+#skills, #portfolio, #sample-work {
     background : #4d4d4d;
 }
 
@@ -96,8 +96,18 @@
     margin : 0px 30px;
 }
 
-#portfolio-head {
-    height : 300px;
+#portfolio, #sample-work {
+    min-height : 200px;
+}
+
+#portfolio-head, #sample-work-head {
+    height : 100px;
+}
+
+#sample-work .link-btn {
+    background : none;
+    color : white;
+    margin-bottom : 20px;
 }
 
 #about-me, #portfolio-head, #footer {
@@ -116,7 +126,7 @@
     padding : 15px 25px;
 }
 
-#footer .social-media-link {
+#footer .social-media-btn {
     color : #1a1a1a;
     border-color : #1a1a1a;
 }

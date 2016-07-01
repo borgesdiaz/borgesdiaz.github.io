@@ -19,8 +19,13 @@ $(document).ready(function(){
     $('#portfolio-btn').click(function(){
         $('#portfolio').goTo();
     });
+    
+    $('#sample-work-btn').click(function(){
+        $('#sample-work').goTo();
+    });
 
-    $('.social-media-link').click(function(){
+
+    $('.link-btn').click(function(){
         var link = $(this).attr('data-link');
         window.location = link;
     });
