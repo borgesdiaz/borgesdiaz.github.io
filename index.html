@@ -1,177 +1,262 @@
 <html>
     <head>
-        <title>Borges Diaz</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="{{asset('js/jquery-3.1.0.min.js')}}"></script>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <script type="text/javascript" src="js/index.js"></script>
-        <link href="css/index.css" rel="stylesheet">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <style>
+            #container {
+
+            }
+
+            #profile {
+                width : 900px;
+                margin : auto;
+            }
+
+            #profile-head {
+                text-align : center;
+            }
+
+            #head-picture {
+                width : 200px;
+                height : 200px;
+                border-radius : 100px;
+            }
+
+            div {
+                font-family : Roboto,"Helvetica Neue",sans-serif; 
+                color : #283e4a;
+            }
+
+            h1, h2, h3, h4, h5 {
+                font-weight : 500;
+                color : #283e4a;
+            }
+
+            p, ul {
+                font-weight : 500;
+                font-size : 18px;
+
+            }
+
+            ul {
+                padding : 0 0 0 17px;
+                list-style: none;
+            }
+
+            .unstyled-list {
+                list-style-type : none;
+                padding : 0;
+            }
+
+            hr {
+                border : 3px solid #708999;
+            }
+        </style>
     </head>
     <body>
-        <div id="container" class="container">
-            <div id="head" style="border : 1px solid blue;">
-                <div class="content">
-                    <h1>Borges Diaz</h1>
-                    <p>Full Stack Web Developer</p>
-                    <p>devborgesdiaz@gmail.com</p>
+        <div id="container">
+            <div id="profile">
+                <div id="profile-head">
+                    <h1 class="heading">Borges Diaz</h1>
+                </div>
+
+                <div>
+                    <hr>
+                    
+                    <h1 class="heading">
+                        <i class="fa fa-user fa-3x light-text" 
+                           aria-hidden="true"
+                           style='font-size:40px;'></i> 
+                    </h1>
+                    <p>A highly motivated web guru proficient in the full stack of technologies used for developing
+                       today's web applications. I have been developing fully functional web apps for over five years.
+                    </p>
+                    <p><i class="fa fa-map-marker fa-3x light-text" 
+                          aria-hidden="true"
+                          style='font-size:25px;'></i>  New York City, NY United States 11208</p>
+                    <p><i class="fa fa-phone fa-3x light-text" 
+                          aria-hidden="true"
+                          style='font-size:25px;'></i>  (917) 570-4811</p>
+                    <p><i class="fa fa-envelope fa-3x light-text" 
+                          aria-hidden="true"
+                          style='font-size:25px;'></i>  devborgesdiaz@gmail.com</p>
+                    <p><i class="fa fa-desktop fa-3x light-text" 
+                          aria-hidden="true"
+                          style='font-size:25px;'></i>  https://github.com/borgesdiaz</p>
+                </div>
+
+                <div>
+                    <hr>
+                    <h1 class="heading">
+                        <i class="fa fa-wrench fa-3x light-text" 
+                           aria-hidden="true"
+                           style='font-size:40px;'></i> Skills
+                    </h1>
                     <ul>
                         <li>
-                            <ul class="inline-list">
+                            <h2>
+                                <i class="fa fa-code fa-3x light-text" 
+                                   aria-hidden="true"
+                                   style='font-size:40px;'></i> Programming Languages
+                            </h2>
+                            <ul>
                                 <li>
-                                    <button type="button" class="btn btn-default head-btn" id="about-me-btn">About Me</button>
+                                    <h3>PHP</h3>
+                                    <ul>
+                                        <li>
+                                            <h3>Frameworks</h3>
+                                            <ul>
+                                                <li>Laravel - The PHP Framework for Web Artisans</li>
+                                                <li>Zend Framework</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    <button type="button" class="btn btn-default head-btn" id="skills-btn">Skills</button>
-                                </li>
-                                <li>
-                                    <button type="button" class="btn btn-default head-btn" id="portfolio-btn">Experience</button>
-                                </li>
-                                <li>
-                                    <button type="button" class="btn btn-default head-btn" id="sample-work-btn">Sample Work</button>
+                                    <h3>Javascript</h3>
+                                    <ul>
+                                        <li>
+                                            <h3>Frameworks</h3>
+                                            <ul>
+                                                <li>AngularJS</li>
+                                                <li>ReactJS</li>
+                                                <li>Bootstrap</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <ul class="inline-list">
+                            <h2><i class="fa fa-database fa-3x light-text" 
+                                   aria-hidden="true"
+                                   style='font-size:40px;'></i> Database Management Systems
+                            </h2>
+                            <ul>
                                 <li>
-                                    <button type="button" 
-                                            class="btn btn-default link-btn social-media-btn" 
-                                            data-link="https://github.com/borgesdiaz"><i class="icon fa fa-github" aria-hidden="true"></i></button>
+                                    MySQL
                                 </li>
                                 <li>
-                                    <button type="button" 
-                                            class="btn btn-default link-btn social-media-btn"
-                                            data-link="https://www.linkedin.com/in/borges-diaz-13185bab"><i class="icon fa fa-linkedin" aria-hidden="true"></i></button>
+                                    PosgreSQL
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2><i class="fa fa-desktop fa-3x light-text" 
+                                   aria-hidden="true"
+                                   style='font-size:40px;'></i> Operating Systems
+                            </h2>
+                            <ul>
+                                <li>
+                                    Linux
                                 </li>
                                 <li>
-                                    <button type="button" 
-                                            class="btn btn-default link-btn social-media-btn"
-                                            data-link="https://plus.google.com/103433166924481621044"><i class="icon fa fa-google-plus" aria-hidden="true"></i></button>
+                                    Windows
+                                </li>
+                                <li>
+                                    Mac OS
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2><i class="fa fa-server fa-3x light-text" 
+                                   aria-hidden="true"
+                                   style='font-size:40px;'></i> Web Servers
+                            </h2>
+                            <ul>
+                                <li>
+                                    Apache HTTP Server
+                                </li>
+                                <li>
+                                    Nginx
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2><i class="fa fa-cog fa-3x light-text" 
+                                   aria-hidden="true"
+                                   style='font-size:40px;'></i> Other Web</h2>
+                            <ul>
+                                <li>
+                                    HTML 5
+                                </li>
+                                <li>
+                                    CSS 3
+                                </li>
+                                <li>
+                                    Git Version Control System
+                                </li>
+                                <li>
+                                    Composer Package Manager
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-            </div>
-            
-            <div id="about-me">
-                <div class="content">
-                    <h1>About Me</h1>
-                    <img src="http://www.clipartbest.com/cliparts/pc5/eBn/pc5eBnKji.svg" alt="" id="profile-picture">
-                    <p>Hello, I am a full stack web developer experienced in PHP, Laravel, Javascript, JQuery, AngularJS, and SQL.</p>
-                    <button type="button" id="resume-btn" class="btn btn-default" data-link="BorgesDiazResume.html">Resume</button>
-                </div>
-            </div>
-            
-            <div id="skills">
-                <div class="content">
-                    <ul class="inline-list">
-                        <li>
-                            <a href="http://php.net/">
-                                <img src="images/php.gif" alt="" class="skill-logo">
-                            </a>
+
+                <div>
+                    <hr>
+                    <h1 class="heading">
+                        <i class="fa fa-file fa-3x light-text" 
+                           aria-hidden="true"
+                           style='font-size:40px;'></i> Experience
+                    </h1>
+                    <ul class="unstyled-list">
+                        <li style='margin-top:50px;'>
+                            <div>
+                                <h2 class="heading">Full Stack Developer</h2>
+                                <h3 class="heading">Wooter</h3>
+                            </div>
+                            <p>Aug 2015 - present • 3 yrs</p>
+                            <p>6276 Amboy Rd</p>
+                            <p>Sports Management Software & Stats Tracking System for Leagues and Teams.</p>
+                            <p>Highlights:</p>
+                            <ol style='list-style-type:initial;'>
+                                <li>Worked closely with project lead to design and implement the software architecture
+                                    for numerous company Web Applications.</li>
+                                <li>Designed and implemented an advanced Stats Tracking System for the company
+                                    apps and website.</li>
+                                <li>Spent some time maintaining legacy code and migrating such code into up to date frameworks.</li>
+                            </ol>
                         </li>
-                        <li>
-                            <a href="https://laravel.com/">
-                                <img src="images/laravel.png" alt="" class="skill-logo">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.javascript.com/">
-                                <img src="images/javascript.svg" alt="" class="skill-logo">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://jquery.com/">
-                                <img src="images/jquery.svg" alt="" class="skill-logo">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://angularjs.org/">
-                                <img src="images/angularjs.png" alt="" class="skill-logo">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.mysql.com/">
-                                <img src="images/mysql.png" alt="" class="skill-logo">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://git-scm.com/">
-                                <img src="images/git.svg" alt="" class="skill-logo">
-                            </a>
+                        <li style='margin-top:50px;'>
+                            <div>
+                                <h2 class="heading">Full Stack Developer • Project Lead</h2>
+                                <h3 class="heading">Datatik</h3>
+                            </div>
+                            <p>Feb 2013 - Jun 2015 • 2 yrs 5 mos</p>
+                            <p>United States</p>
+                            <p>Data Tracking System built for tracking data in real time. Datatik is useful for tracking stats at sporting events, counting items, data entry, and much more.</p>
+                            <p>Highlights:</p>
+                            <ol style='list-style-type:initial;'>
+                                <li>Designed and implemented the software architecture for the Datatik website and app.</li>
+                                <li>Implemented a real time data tracking API that allows users to track and view data
+                                    in real time.</li>
+                                <li>Was highly involved in the UI and UX design and implementation.</li>
+                            </ol>
                         </li>
                     </ul>
                 </div>
-            </div>
-            
-            <div id="portfolio-head">
-                <div class="content">
-                    <h1>Work</h1>
+
+                <div>
+                    <hr>
+                    <h1 class="heading">
+                        <i class="fa fa-graduation-cap fa-3x light-text" 
+                                   aria-hidden="true"
+                                   style='font-size:40px;'></i> Education</h1>
+                    <p><strong>Clara Barton High School</strong>, New York City, NY United States</p>
+                    <p>2004-2008</p>
                 </div>
-            </div>
-            
-            <div id="portfolio">
-                <ul>
-                    <li>
-                        <h1>Wooter, LLC</h1>
-                        <p>Full Stack Web Developer</p>
-                        <p>2015 - present</p>
-                    </li>
-                </ul>
-            </div>
-            
-            <div id="sample-work-head">
-                <div class="content">
-                    <h1>Sample Code</h1>
-                </div>
-            </div>
-            
-            <div id="sample-work">
-                <ul>
-                    <li>
-                        <h1>Easy Forms</h1>
-                        <button type="button" 
-                                class="btn btn-default link-btn" 
-                                data-link="https://github.com/borgesdiaz/easy-forms">View Source</button>
-                    </li>
-                    <li>
-                        <h1>Datafeed</h1>
-                        <button type="button" 
-                                class="btn btn-default link-btn" 
-                                data-link="https://github.com/borgesdiaz/data-feed">View Source</button>
-                    </li>
-                    <li>
-                        <h1>MyReservations</h1>
-                        <button type="button" 
-                                class="btn btn-default link-btn" 
-                                data-link="https://github.com/borgesdiaz/MyReservations">View Source</button>
-                    </li>
-                </ul>
-            </div>
-            
-            <div id="footer">
-                <ul class="inline-list">
-                    <li>
-                        <button type="button" 
-                                class="btn btn-default link-btn social-media-btn"
-                                data-link="https://github.com/borgesdiaz"><i class="icon fa fa-github" aria-hidden="true"></i></button>
-                    </li>
-                    <li>
-                        <button type="button" 
-                                class="btn btn-default link-btn social-media-btn"
-                                data-link="https://www.linkedin.com/in/borges-diaz-13185bab"><i class="icon fa fa-linkedin" aria-hidden="true"></i></button>
-                    </li>
-                    <li>
-                        <button type="button" 
-                                class="btn btn-default link-btn social-media-btn"
-                                data-link="https://plus.google.com/103433166924481621044"><i class="icon fa fa-google-plus" aria-hidden="true"></i></button>
-                    </li>
-                </ul>
-                
-                <p>&copy; Borges Diaz. All rights reserved.</p>
             </div>
         </div>
+
+
+        
     </body>
 </html>
+
